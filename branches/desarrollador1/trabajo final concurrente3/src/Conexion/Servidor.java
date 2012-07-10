@@ -16,11 +16,11 @@ public class Servidor {
 
     Servidor(int puerto)                //creo el servidor y los 2 jugadores
     {
-        System.out.println("Soy el servidor");
+        //System.out.println("Soy el servidor");
         jugador1 = new JugadorL();
         jugador2 = new JugadorL();
-       configurarJugador(jugador1,50,30);
-       configurarJugador(jugador2,350,330);
+        configurarJugador(jugador1,50,30);
+        configurarJugador(jugador2,350,330);
         try{
             sock = new ServerSocket(puerto);
             esServidor = true;

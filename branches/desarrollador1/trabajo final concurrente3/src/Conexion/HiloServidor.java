@@ -1,7 +1,5 @@
 
 package Conexion;
-import com.sun.jmx.remote.internal.ClientCommunicatorAdmin;
-import grafica.Actor;
 import grafica.JugadorL;
 import java.io.*;
 import java.net.Socket;
