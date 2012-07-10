@@ -3,12 +3,8 @@
 package grafica;
 
 import java.awt.Rectangle;
-import java.lang.reflect.Array;
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.List;
-import java.util.Vector;
-import java.util.concurrent.Semaphore;
 
 
 public class Cuadrante1 extends Cuadrante{
