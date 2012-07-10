@@ -20,8 +20,8 @@ public class Policia extends Robot {
     @Override
     public void moverse() {
         setPosicionAnterior();
-        //setX((int)(x + xVel * vel / 1000));
-        //setY((int)(y + yVel * vel / 1000));
+        setX((int)(x + xVel * vel / 1000));
+        setY((int)(y + yVel * vel / 1000));
         r.setLocation(x, y);
     }
 
