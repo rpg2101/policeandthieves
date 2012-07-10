@@ -1,8 +1,6 @@
 package Diccionario;
 
 import view.Rotulo;
-import java.io.File;
-import java.io.FileInputStream;
 import java.util.Iterator;
 import java.util.Properties;
 import java.util.TreeMap;

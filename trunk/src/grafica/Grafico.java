@@ -1,7 +1,6 @@
 
 package grafica;
 
-import view.Rotulo;
 import java.awt.Color;
 import java.awt.Graphics2D;
 import java.awt.Rectangle;
@@ -10,8 +9,6 @@ import java.util.Iterator;               // utilidad de clase para recorrer una 
 import java.util.List;
 import java.util.Vector;               // clase para emplear vectores con diferentes metodos declarados...
 import view.Rotulo;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 public abstract class Grafico {
 

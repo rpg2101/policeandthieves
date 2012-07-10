@@ -2,9 +2,7 @@
 package Conexion;
 
 import grafica.*;
-import java.awt.Color;
 import java.net.*;
-import view.*;
 
 
 public class Servidor {
