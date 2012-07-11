@@ -1,6 +1,6 @@
 package view;
 
-public class RotuloJLi extends Rotulo{
+public class RotuloJLi extends Rotulo {
 
     @Override
     public void set(Comparable c) {
@@ -16,5 +16,4 @@ public class RotuloJLi extends Rotulo{
     protected void ini() {
         throw new UnsupportedOperationException("Not supported yet.");
     }
-
 }

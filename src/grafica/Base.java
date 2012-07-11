@@ -1,12 +1,8 @@
-
-
 package grafica;
-                        // clase madre para base origen y destino.. ( media al pedo.. ) jeje
+// clase madre para base origen y destino.. ( media al pedo.. ) jeje
 public abstract class Base extends Grafico {
 
-    
-
- @Override
+    @Override
     public Boolean colisionoCon(MH gr) {
         return false;
     }
@@ -16,21 +12,23 @@ public abstract class Base extends Grafico {
         return false;
     }
 
-     @Override
+    @Override
     public Boolean colisionoCon(JugadorL gr) {
         return true;
 
-     }
-       public Boolean colisionoCon(Policia gr) {
-           return true;
     }
-      
+
+    public Boolean colisionoCon(Policia gr) {
+        return true;
+    }
+
     @Override
     public Boolean colisionoCon(BDestino gr) {
         return false;
     }
- @Override
+
+    @Override
     public Boolean colisionoCon(BOrigen gr) {
         return false;
- }
+    }
 }

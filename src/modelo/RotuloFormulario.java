@@ -2,7 +2,6 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package modelo;
 
 /**
@@ -17,8 +16,7 @@ public class RotuloFormulario {
      * Debe tener un Boton Aceptar y un Boton Cancelar
      * Debe poder crear una ventana propia o ser dispuesto en otro objeto
      */
+
     String formulario, metodo;
     Object objeto;
-    
-
 }
