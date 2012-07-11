@@ -3,7 +3,6 @@ package grafica;
 
 
 import Conexion.Cliente;
-import Conexion.Servidor;
 import java.awt.Color;
 import java.awt.Graphics2D;
 import java.awt.event.KeyEvent;
@@ -186,6 +185,7 @@ public class JugadorL extends Actor implements KeyListener{
         }
     }
 
+    @Override
       public void mover(int x, int y)
     {
        setPosicionAnterior(getX(),getY());

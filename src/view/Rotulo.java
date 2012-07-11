@@ -1,6 +1,5 @@
 package view;
 
-import view.validacion.Validador;
 import java.awt.Color;
 import java.util.Map;
 import java.util.logging.Level;
@@ -8,6 +7,7 @@ import java.util.logging.Logger;
 import javax.swing.JComponent;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+import view.validacion.Validador;
 
 public abstract class Rotulo extends JPanel{
     protected JLabel jL;

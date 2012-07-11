@@ -1,11 +1,11 @@
 package Diccionario;
 
-import view.Rotulo;
 import java.util.Iterator;
 import java.util.Properties;
 import java.util.TreeMap;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import view.Rotulo;
 
 public class Formularios extends TreeMap<String, Diccionario>{
     private static Formularios forma = new Formularios();

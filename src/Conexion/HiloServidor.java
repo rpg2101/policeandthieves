@@ -1,7 +1,9 @@
 
 package Conexion;
 import grafica.JugadorL;
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.io.PrintWriter;
 import java.net.Socket;
 
 
@@ -12,6 +14,7 @@ public class HiloServidor extends Thread {
         sock = S;
         Numjugador = Jugador;               //crea el hilo servidor, lo pone a correr desde el main.
     }
+    @Override
     public void run(){
         BufferedReader in;
         String inputLine;
