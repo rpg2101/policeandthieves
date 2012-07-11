@@ -24,7 +24,7 @@ public class KeyListenerCliente  implements KeyListener{
             }
             catch(Exception ex){
                 
-                System.out.println("Houston we have a problem con la tecla");
+                System.out.println("Problema con la tecla");
         
         }
     }

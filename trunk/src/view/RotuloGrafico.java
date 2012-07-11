@@ -2,20 +2,7 @@
 package view;
 
 import Conexion.Cliente;
-import grafica.BDestino;
-import grafica.BOrigen;
-import grafica.CruceCalle;
-import grafica.Cuadrante;
-import grafica.Grafico;
-import grafica.JugadorL;
-import grafica.KeyListenerCliente;
-import grafica.MH;
-import grafica.MV;
-import grafica.Policia;
-import grafica.Cuadrante1;
-import grafica.Cuadrante2;
-import grafica.Cuadrante3;
-import grafica.Cuadrante4;
+import grafica.*;
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
@@ -226,9 +213,6 @@ public class RotuloGrafico extends Rotulo {
         todos.add(muro);
         this.repaint();
     }
-
-
-
 
 
     private void creoPolicia(Integer x, Integer y, Integer xVel, Integer yVel){

@@ -1,8 +1,9 @@
 
 package Conexion;
 
-import grafica.*;
-import java.net.*;
+import grafica.JugadorL;
+import java.net.ServerSocket;
+import java.net.Socket;
 
 
 public class Servidor {

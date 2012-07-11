@@ -1,9 +1,7 @@
 
 package grafica;
 
-import java.awt.Rectangle;
 import java.util.Iterator;
-import java.util.concurrent.Semaphore;
 
 
 

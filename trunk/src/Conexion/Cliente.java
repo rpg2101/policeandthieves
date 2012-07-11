@@ -6,12 +6,9 @@
 package Conexion;
 import grafica.JugadorL;
 import java.net.Socket;
-import java.net.Socket.*;
-
-
 
 public class Cliente {
-    static Socket cliente=null;
+    static Socket  cliente  =null;
     static boolean esCliente=false;
     static public JugadorL jugador1;        //define el socket cliente, y los objetos jugador1 y 2
     static public JugadorL jugador2;

@@ -1,18 +1,17 @@
 
 package Conexion;
 
-import com.sun.org.apache.bcel.internal.generic.IFEQ;
 import grafica.JugadorL;
 import java.awt.Color;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-import org.omg.PortableInterceptor.SYSTEM_EXCEPTION;
 
 
 public class HiloCliente extends Thread{
     public HiloCliente (){
         
     }
+    @Override
     public void run(){
         BufferedReader in;
         String inputLine=null;                  //declara los elementos in, inputlone y datos recibidos, segun su tipo...

@@ -1,8 +1,8 @@
 package Diccionario;
 
-import view.Rotulo;
 import java.util.Iterator;
 import java.util.TreeMap;
+import view.Rotulo;
 
 public class Diccionario extends TreeMap<Comparable, DiccionarioItem>{
     

@@ -4,10 +4,10 @@ package grafica;
 import java.awt.Color;
 import java.awt.Graphics2D;
 import java.awt.Rectangle;
-import java.awt.Shape;                   //  proporciona las definiciones de objetos que representan algún tipo de forma geométrica.
-import java.util.Iterator;               // utilidad de clase para recorrer una lista
+import java.awt.Shape;
+import java.util.Iterator;
 import java.util.List;
-import java.util.Vector;               // clase para emplear vectores con diferentes metodos declarados...
+import java.util.Vector;
 import view.Rotulo;
 
 public abstract class Grafico {

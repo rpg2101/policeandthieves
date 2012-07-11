@@ -1,11 +1,13 @@
 package trabajofinalconcurrente;
 
 
+import Conexion.Cliente;
+import Conexion.HiloServidor;
+import Conexion.Servidor;
 import Diccionario.Formularios;
+import java.net.Socket;
 import javax.swing.JFrame;
 import view.Rotulo;
-import Conexion.*;
-import java.net.Socket;
 
 public class Main{
 
