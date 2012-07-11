@@ -1,9 +1,7 @@
-
 package grafica;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;
-
 
 public abstract class Robot extends Actor implements Runnable {
 
@@ -11,9 +9,8 @@ public abstract class Robot extends Actor implements Runnable {
     protected Integer xVel;
     protected Integer yVel;
 
-
     public void run() {
-        while (vida>0){
+        while (vida > 0) {
             try {
                 funColision();
                 moverse();
@@ -28,7 +25,6 @@ public abstract class Robot extends Actor implements Runnable {
 
     public abstract void moverse();
 
-
     public long getVel() {
         return vel;
     }
@@ -36,6 +32,4 @@ public abstract class Robot extends Actor implements Runnable {
     public void setVel(long vel) {
         this.vel = vel;
     }
-
-
 }

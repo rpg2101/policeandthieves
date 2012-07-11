@@ -4,11 +4,12 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JButton;
 
-public class RotuloJBu extends Rotulo implements ActionListener{
+public class RotuloJBu extends Rotulo implements ActionListener {
+
     private String metodo;
     private Object objeto;
-    
-    public RotuloJBu (String st){
+
+    public RotuloJBu(String st) {
         super();
         ini();
         ((JButton) jcomp).setText(st);
@@ -26,13 +27,13 @@ public class RotuloJBu extends Rotulo implements ActionListener{
 
     @Override
     protected void ini() {
-        this.setBounds(0, 0, wr, 2*h);
+        this.setBounds(0, 0, wr, 2 * h);
         jcomp = new JButton();
         add(jcomp);
     }
-    
+
     @Override
-    public void set (String met, Object ob){
+    public void set(String met, Object ob) {
         metodo = met;
         objeto = ob;
     }
@@ -41,11 +42,11 @@ public class RotuloJBu extends Rotulo implements ActionListener{
         try {
             objeto.getClass().getMethod(metodo, (Class[]) null).invoke(objeto, (Object[]) null);
         } catch (Exception ex) {
-            System.out.println("Error!!! "+ex);
+            System.out.println("Error!!! " + ex);
         }
     }
-    public Boolean valido(){
+
+    public Boolean valido() {
         return true;
     }
-
 }
