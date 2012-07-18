@@ -19,7 +19,9 @@ public class ActorTest {
     public void testVolverPosicion() {
         System.out.println("volverPosicion");
         Actor instance = new ActorImpl();
+        instance.setPosicionAnterior(50, 50);
         instance.volverPosicion();
+        assertEquals(instance.x, Integer.valueOf(50));
         assertEquals(instance.x, Integer.valueOf(50));
     }
 
@@ -29,9 +31,9 @@ public class ActorTest {
         Integer x = null;
         Integer y = null;
         Actor instance = new ActorImpl();
-        instance.setPosicionAnterior(x, y);
-        // TODO review the generated test code and remove the default call to fail.
-
+        instance.setPosicionAnterior(20, 20);
+        assertEquals(instance.xAnt, Integer.valueOf(20));
+        assertEquals(instance.yAnt, Integer.valueOf(20));
     }
 
 
@@ -39,9 +41,11 @@ public class ActorTest {
     public void testSetPosicionAnterior_0args() {
         System.out.println("setPosicionAnterior");
         Actor instance = new ActorImpl();
+        instance.x = Integer.valueOf(50);
+        instance.y = Integer.valueOf(50);
         instance.setPosicionAnterior();
-        // TODO review the generated test code and remove the default call to fail.
-
+        assertEquals(instance.xAnt, Integer.valueOf(50));
+        assertEquals(instance.yAnt, Integer.valueOf(50));
     }
 
     public class ActorImpl extends Actor {

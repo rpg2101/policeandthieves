@@ -25,10 +25,10 @@ public class GraficoTest {
     public void testGetLista() {
         System.out.println("getLista");
         List expResult = null;
-        List result = Grafico.getLista();
+        //GraficoImpl graficotest = new GraficoImpl();
+        GraficoImpl.setLista(null);
+        List result = GraficoImpl.getLista();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-    
     }
 
     /**
@@ -39,8 +39,7 @@ public class GraficoTest {
         System.out.println("setLista");
         List<Grafico> aLista = null;
         Grafico.setLista(aLista);
-        // TODO review the generated test code and remove the default call to fail.
-     
+        assertEquals(Grafico.getLista(),null);
     }
 
     /**
@@ -54,8 +53,6 @@ public class GraficoTest {
         Boolean expResult = null;
         Boolean result = instance.colisionoCon(gr);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-
     }
 
     /**
@@ -69,8 +66,7 @@ public class GraficoTest {
         Boolean expResult = null;
         Boolean result = instance.colisionoCon(gr);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-  
+        
     }
 
     /**
@@ -84,8 +80,7 @@ public class GraficoTest {
         Boolean expResult = null;
         Boolean result = instance.colisionoCon(gr);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-      
+        
     }
 
     /**
@@ -99,8 +94,7 @@ public class GraficoTest {
         Boolean expResult = null;
         Boolean result = instance.colisionoCon(gr);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-   
+        
     }
 
     /**
@@ -114,8 +108,7 @@ public class GraficoTest {
         Boolean expResult = null;
         Boolean result = instance.colisionoCon(gr);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-      
+        
     }
 
     /**
@@ -129,8 +122,7 @@ public class GraficoTest {
         Boolean expResult = null;
         Boolean result = instance.colisionoCon(gr);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-    
+        
     }
 
     /**
@@ -144,8 +136,7 @@ public class GraficoTest {
         Boolean expResult = null;
         Boolean result = instance.colisionoCon(gr);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-  
+ 
     }
 
     /**
@@ -154,12 +145,12 @@ public class GraficoTest {
     @Test
     public void testMover() {
         System.out.println("mover");
-        int X = 0;
-        int Y = 0;
+        int X = 4;
+        int Y = 60;
         Grafico instance = new GraficoImpl();
         instance.mover(X, Y);
-        // TODO review the generated test code and remove the default call to fail.
-       
+        assertEquals(instance.x, Integer.valueOf(X));
+        assertEquals(instance.y, Integer.valueOf(Y));
     }
 
     /**
@@ -169,11 +160,9 @@ public class GraficoTest {
     public void testGetX() {
         System.out.println("getX");
         Grafico instance = new GraficoImpl();
-        Integer expResult = null;
+        Integer expResult = Integer.valueOf(50);
         Integer result = instance.getX();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-      
     }
 
     /**
@@ -182,11 +171,12 @@ public class GraficoTest {
     @Test
     public void testSetX() {
         System.out.println("setX");
-        Integer x = null;
+        Integer x = Integer.valueOf(50);
         Grafico instance = new GraficoImpl();
         instance.setX(x);
-        // TODO review the generated test code and remove the default call to fail.
-     
+        Integer result = instance.getX();
+        assertEquals(Integer.valueOf(50), result);
+        
     }
 
     /**
@@ -196,11 +186,9 @@ public class GraficoTest {
     public void testGetY() {
         System.out.println("getY");
         Grafico instance = new GraficoImpl();
-        Integer expResult = null;
+        Integer expResult = Integer.valueOf(50);
         Integer result = instance.getY();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-  
     }
 
     /**
@@ -209,11 +197,11 @@ public class GraficoTest {
     @Test
     public void testSetY() {
         System.out.println("setY");
-        Integer y = null;
+        Integer y = Integer.valueOf(50);
         Grafico instance = new GraficoImpl();
         instance.setY(y);
-        // TODO review the generated test code and remove the default call to fail.
- 
+        Integer result = instance.getY();
+        assertEquals(Integer.valueOf(50), result);
     }
 
     /**
@@ -225,7 +213,7 @@ public class GraficoTest {
         Grafico instance = new GraficoImpl();
         Integer expResult = null;
         Integer result = instance.getW();
-        assertEquals(expResult, result);
+        assertEquals(Integer.valueOf(20), result);
         // TODO review the generated test code and remove the default call to fail.
  
     }
@@ -304,9 +292,9 @@ public class GraficoTest {
     public void testFunColision() {
         System.out.println("funColision");
         Grafico instance = new GraficoImpl();
+        
         instance.funColision();
-        // TODO review the generated test code and remove the default call to fail.
-   
+       
     }
 
     /**
